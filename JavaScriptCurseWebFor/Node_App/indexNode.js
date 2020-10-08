@@ -10,3 +10,9 @@ const data = `
     JavaScript!
 `
 fs.writeFileSync('nodejs.txt', data);
+
+let read = fs.readFileSync('nodejs.txt', {encoding: 'utf-8'});
+console.log(read);
+
+console.log(__dirname);
+console.log(__filename);
